@@ -1,9 +1,9 @@
 {
-  "name": "alaa-almaliki/property-config",
+  "name": "alaa-almaliki/property-setter-config",
   "description": "PHP library can be used to set object properties by a given array passed in the constructor",
   "license": "MIT",
   "type": "library",
-  "homepage": "https://github.com/alaa-almaliki/property-config",
+  "homepage": "https://github.com/alaa-almaliki/property-setter-config",
   "authors": [
     {
       "name": "Alaa Al-Maliki",
@@ -11,8 +11,8 @@
     }
   ],
   "autoload": {
-    "psr-4": {
-      "PropertyConfig\\": "src/"
+    "psr-0": {
+      "": "src/"
     }
   }
 }
