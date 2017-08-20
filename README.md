@@ -39,7 +39,7 @@ class MyObject
 }
 
 $myObject = new MyObject(['name' => 'Alaa']);
-echo $myObject->getName(); // alaa
+echo $myObject->getName(); // Alaa
 
 ```
 
