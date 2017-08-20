@@ -1,13 +1,11 @@
 <?php
-namespace PropertyConfig;
-
 /**
  * Class Config
  * @package PropertyConfig
  * @copyright Alaa Al-Maliki
  * @author Alaa Al-Maliki
  */
-final class Config
+final class PropertySetterConfig
 {
     /**
      * Sets object properties by a given array
