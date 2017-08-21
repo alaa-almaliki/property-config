@@ -1,4 +1,4 @@
-# Property Config
+# Property Setter Config
 A simple class sets object properties by a given array passed in class constructor
 ### Installation
 Add the following segment to your `composer.json` file on you project, then run `composer install` or `composer require alaa-almaliki/property-setter-config:dev-master`

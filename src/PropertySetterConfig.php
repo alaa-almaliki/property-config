@@ -3,7 +3,7 @@
  * Class Config
  * @package PropertyConfig
  * @copyright Alaa Al-Maliki
- * @author Alaa Al-Maliki
+ * @author Alaa Al-Maliki <alaa.almaliki@gmail.com>
  */
 final class PropertySetterConfig
 {
