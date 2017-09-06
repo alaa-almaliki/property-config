@@ -17,7 +17,7 @@ final class PropertySetterConfig
     {
         foreach (static::createSetterMethods($config) as $method => $value) {
             if (method_exists($object, $method)) {
-                $object->$method($value);
+                call_user_func_array([$object, $method], [$value]);
             }
         }
     }
