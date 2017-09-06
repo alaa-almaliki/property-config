@@ -1,45 +1,77 @@
 # Property Setter Config
 A simple class sets object properties by a given array passed in class constructor
 ### Installation
-Add the following segment to your `composer.json` file on you project, then run `composer install` or `composer require alaa-almaliki/property-setter-config:0.1.0`
-```
-{
-  "repositories": [
-    {
-      "url": "https://github.com/alaa-almaliki/property-setter-config.git",
-      "type": "git"
-    }
-  ],
-  "require": {
-    "alaa-almaliki/property-setter-config": "0.1.0"
-    }
-}
-```
+Add the following segment to your `composer.json` file on you project, then run `composer install` or `composer require alaa-almaliki/property-setter-config`
+
 ### Example
 ```
-class MyObject
+class MyClass
 {
-    private $name;
-    
+    private $firstName;
+    private $lastName;
+    private $email;
+    private $friends = [];
+
     public function __construct(array $config = [])
     {
         PropertySetterConfig::setObjectProperties($this, $config);
     }
 
-    public function setName($name)
+    public function setFirstName($value)
     {
-        $this->name = $name;
+        $this->firstName = $value;
+    }
+
+    public function getFirstName()
+    {
+        return $this->firstName;
+    }
+
+    public function setLastName($value)
+    {
+        $this->lastName = $value;
         return $this;
     }
-    
-    public function getName()
+
+    public function getLastName()
     {
-        return $this->name;
+        return $this->lastName;
+    }
+
+    public function setEmail($value)
+    {
+        $this->email = $value;
+        return $this;
+    }
+
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    public function setFriends(array $value)
+    {
+        $this->friends = $value;
+        return $this;
+    }
+
+    public function getFriends()
+    {
+        return $this->friends;
     }
 }
 
-$myObject = new MyObject(['name' => 'Alaa']);
-echo $myObject->getName(); // Alaa
+$obj = new MyClass([
+    'first_name' => 'alaa',
+    'last_name' => 'almaliki',
+    'email'     => 'alaa.almaliki@gmail.com',
+    'friends' => [
+        'Adam',
+        'Melissa',
+        'laith',
+        'Ahmed'
+    ]
+]);
 
 ```
 
